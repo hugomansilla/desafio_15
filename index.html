@@ -25,50 +25,51 @@
         <h1>To Do List</h1>
         <hr>
         <br>
-        <!-- Nueva tarea -->
-        <!--
-        <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
-            <br><br>
-            <input type="submit" value="Enviar">
-        </form>-->
 
+        <!-- Agregar tareas -->
         <div class="row">
             <div class="col-md-12">
                 <label for="">Nueva tarea:</label>
                 <input type="text" id="tarea" placeholder="Ingresa la tarea">
-                <button>Agregar</button>
+                <button id="agregarTarea">Agregar</button>
             </div>
          </div>
          <br>
          <br>
         <div class="row">
+
         <!-- Contador de tareas -->
             <div class="col-md-6">
                 <h3>Contador de tareas</h3>
-                <br>
-                <p>Total:</p>
-                <p>Realizadas:</p>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <th>Total:</th>
+                            <th><span class="tareasContar"></span></th>
+                        </tr>
+                        <tr>
+                            <th>Realizadas:</th>
+                            <th><span class="tareasRealizadas"></span></th>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
         <!-- Lista de tareas -->
             <div class="col-md-6">
-                <h3>Registro de tareas</h3>
-                <table>
+                <h3>Listado de tareas</h3>
+                <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
+                            <th>Id</th>
+                            <th>Tarea</th>
+                            <th>Realizado</th>
+                            <th>Borrar</th>
                         </tr>
                     </thead>
 
-                    <tbody>
-                        <tr></tr>
-                        <tr></tr>
-                        <tr></tr>
+                    <tbody id="tareas">
+
                     </tbody>
                 </table>
             </div>
